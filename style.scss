@@ -1,126 +1,123 @@
 *,
 ::after,
 ::before {
-	padding: 0;
-	margin: 0;
-	box-sizing: border-box;
-}
-
-:root {
-	--active-btn: #247ba0;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 html {
-	font-size: 62.5%;
+  font-size: 62.5%;
 }
 
 body {
-	height: 100vh;
-	width: 100vw;
-	position: relative;
-	display: flex;
-	justify-content: center;
-	background-color: #ffffb5;
-	background-image: linear-gradient(315deg, #ffffb5 0%, #247ba0 74%);
-	color: black;
-	font-family: 'Roboto', sans-serif;
-	font-weight: 400;
-	font-style: normal;
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  background-color: #ffffb5;
+  background-image: linear-gradient(315deg, #ffffb5 0%, #247ba0 74%);
+  color: black;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .container {
-	width: 400px;
-	height: 250px;
-	position: absolute;
-	top: 100px;
-	display: flex;
-	flex-direction: column;
-	border-radius: 10px;
-	box-shadow: -2px -2px 5px rgba(255, 255, 255, 0.5),
-		2px 2px 5px rgba(70, 70, 70, 0.37);
+  width: 400px;
+  height: 250px;
+  position: absolute;
+  top: 100px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  box-shadow: -2px -2px 5px rgba(255, 255, 255, 0.5),
+    2px 2px 5px rgba(70, 70, 70, 0.37);
 }
 
 .text-box {
-	width: 100%;
-	height: 70%;
-	padding: 1.5em;
-	border-bottom: 1px solid gray;
+  width: 100%;
+  height: 70%;
+  padding: 1.5em;
+  border-bottom: 1px solid gray;
 }
 
 .text-input {
-	width: 100%;
-	height: 100%;
-	padding: 10px;
-	font-size: 2em;
-	resize: none;
-	border: none;
-	outline: none;
-	border-radius: 10px;
-	box-shadow: 2px 2px 5px rgba(70, 70, 70, 0.37);
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  font-size: 2em;
+  resize: none;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px rgba(70, 70, 70, 0.37);
 }
 
 .controllers-box {
-	width: 100%;
-	height: 30%;
-	padding: 1.5em;
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: space-between;
+  width: 100%;
+  height: 30%;
+  padding: 1.5em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .control-item {
-	height: 40px;
-	width: 17%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	background: none;
-	outline: none;
-	border: none;
-	box-shadow: -2px -2px 5px rgba(255, 255, 255, 0.5),
-		2px 2px 5px rgba(70, 70, 70, 0.37);
-	border-radius: 5px;
-	transition: box-shadow 0.3s;
-	cursor: pointer;
+  height: 40px;
+  width: 17%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: none;
+  outline: none;
+  border: none;
+  box-shadow: -2px -2px 5px rgba(255, 255, 255, 0.5),
+    2px 2px 5px rgba(70, 70, 70, 0.37);
+  border-radius: 5px;
+  transition: box-shadow 0.3s;
+  cursor: pointer;
 }
 
 .control-item:nth-child(1) {
-	width: 34%;
-	cursor: default;
+  width: 34%;
+  cursor: default;
 }
 
 .control-item:hover {
-	box-shadow: inset -3px -3px 5px rgba(255, 255, 255, 0.5),
-	inset 3px 3px 5px rgba(70, 70, 70, 0.12);
+  box-shadow: inset -3px -3px 5px rgba(255, 255, 255, 0.5),
+    inset 3px 3px 5px rgba(70, 70, 70, 0.12);
 }
 
 .speed {
-	height: 40px;
-	width: 100px;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-evenly;
-	align-items: center;
-	border: none;
+  height: 40px;
+  width: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  border: none;
 }
 
 .speed-input {
-	width: 100%;
-	height: 100%;
-	padding: 10px;
-	font-size: 1.5rem;
-	border: 1px solid gray;
-	border-radius: 5px;
-	transition: box-shadow 0.2s;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  font-size: 1.5rem;
+  border: 1px solid gray;
+  border-radius: 5px;
+  transition: box-shadow 0.3s;
 }
 
 .speed-label {
-	font-size: 1.5rem;
-	padding-inline: 8px;
-	color: #fff;
+  font-size: 1.5rem;
+  padding-inline: 8px;
+  color: #fff;
 }
 
 .active-button {
-	box-shadow: inset -3px -3px 5px rgba(255, 255, 255, 0.5), inset 3px 3px 5px rgba(70, 70, 70, 0.12);
+  box-shadow: inset -3px -3px 5px rgba(255, 255, 255, 0.5),
+    inset 3px 3px 5px rgba(70, 70, 70, 0.12);
 }
